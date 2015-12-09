@@ -4,6 +4,9 @@ exoskeleton:
 noutils:
 	cat lib/{header,events,model,collection,view,sync,router,history,footer}.js > exoskeleton.js
 
+my_req:
+	cat lib/{header,utils,events,model,collection,view,footer}.js > exoskeleton.js
+
 min:
 	uglifyjs -m < exoskeleton.js > exoskeleton.min.js
 	wc exoskeleton.js
